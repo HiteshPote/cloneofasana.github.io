@@ -1,1 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manage your team's work, projects, & tasks online • Asana</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Arimo:ital,wght@0,400..700;1,400..700&family=Caveat:wght@400..700&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Arimo:ital,wght@0,400..700;1,400..700&family=Caveat:wght@400..700&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Signika:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar-->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+
+      <a href="/" class="logo" aria-label="Asana home">
+        <svg class="logo-icon" viewBox="0 0 40 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="20" cy="8"  r="8"  fill="#F06A6A"/>
+          <circle cx="8"  cy="22" r="8"  fill="#F06A6A"/>
+          <circle cx="32" cy="22" r="8"  fill="#F06A6A"/>
+        </svg>
+        <span class="logo-wordmark">asana</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#" class="nav-link">Product <span class="caret">&#8964;</span></a>
+        <a href="#" class="nav-link">Solutions <span class="caret">&#8964;</span></a>
+        <a href="#" class="nav-link">Learning &amp; support <span class="caret">&#8964;</span></a>
+        <a href="#" class="nav-link">Pricing</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="nav-globe" aria-label="Change language">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+          </svg>
+        </button>
+        <a href="#" class="btn-ghost">Contact sales</a>
+        <a href="#" class="btn-ghost">Log in</a>
+        <a href="#" class="btn-pill nav-cta">Get started</a>
+      </div>
+
+      <!-- Hamburger (mobile only) -->
+      <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu" hidden>
+      <a href="#">Product</a>
+      <a href="#">Solutions</a>
+      <a href="#">Learning &amp; support</a>
+      <a href="#">Pricing</a>
+      <a href="#">Log in</a>
+      <a href="#" class="mobile-cta">Get started</a>
+    </div>
+  </header>
+
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-copy">
+      <h1>All your work,all in one place</h1>
+      <p>Bring people and AI together to plan, track,and deliver work faster.</p>
+      <div class="hero-btns">
+        <a href="#" class="btn-pill large">Get started</a>
+        <a href="#" class="btn-outline large">View demo</a>
+      </div>
+    </div>
+    <div class="hero-shot">
+      <img src="https://assets.asana.biz/transform/9feec6cc-be7f-42c2-9fec-36aeed2290c8/WEB-product-hero-en_us?io=transform:fill,width:1400&format=webp"
+           alt="Asana product interface" />
+    </div>
+  </section>
+
+
+  <!-- Logo Strip-->
+  <section class="logo-strip">
+    <p>85% of Fortune 100 <br /> companies choose Asana<sup>1</sup></p>
+    <ul>
+      <li><img src="https://assets.asana.biz/transform/94a2af9e-55e7-489b-bcd9-7f2836f5e45f/amazon?io=transform:fill,width:300&format=webp" alt="Amazon" /></li>
+      <li><img src="https://assets.asana.biz/transform/7aa89522-d837-49fc-ae5b-d8701de258fd/accenture?io=transform:fill,width:300&format=webp" alt="Accenture" /></li>
+      <li><img src="https://assets.asana.biz/transform/64c6de51-290f-40fa-808a-241c6bae8528/JJ?io=transform:fill,width:300&format=webp" alt="Johnson &amp; Johnson" /></li>
+      <li><img src="https://assets.asana.biz/transform/29c5cd4b-7a60-4557-8004-f78cbb8c5ffc/dell?io=transform:fill,width:300&format=webp" alt="Dell" /></li>
+      <li><img src="https://assets.asana.biz/transform/8d9b2024-7c0b-463b-88c0-ee3107d4f5fe/merck?io=transform:fill,width:300&format=webp" alt="Merck" /></li>
+    </ul>
+  </section>
+
+
+  <!-- Platform -->
+  <section class="platform">
+    <div class="container">
+      <h2>The platform for human + <br />AI collaboration</h2>
+
+      <div class="border">
+        <div class="tabs" role="tablist">
+        <button class="tab active" role="tab" data-target="marketing">Marketing</button>
+        <button class="tab" role="tab" data-target="operations">Operations</button>
+        <button class="tab" role="tab" data-target="it">IT</button>
+        <button class="tab" role="tab" data-target="leadership">Leadership</button>
+      </div>
+
+      <div class="tab-panels">
+
+        <div class="tab-panel active" id="panel-marketing">
+          <div class="panel-copy">
+            <h3>Maximize campaign ROI</h3>
+            <ul>
+              <li>Streamline campaign management</li>
+              <li>Enhance creative production</li>
+              <li>Manage events and editorial calendars</li>
+            </ul>
+            <a href="#" class="btn-pill">Get started</a>
+          </div>
+          <div class="panel-img">
+            <img src="https://assets.asana.biz/transform/e1f45e45-2aa9-4f83-ae4b-1de50d4aa324/R3_WEB-AI26-builder-how-it-works-transparent-en_us?io=transform:fill,width:900&format=webp"
+                 alt="Marketing dashboard" />
+          </div>
+        </div>
+
+        <div class="tab-panel" id="panel-operations">
+          <div class="panel-copy">
+            <h3>Drive better outcomes</h3>
+            <ul>
+              <li>Track work and see progress in real time</li>
+              <li>Standardize and automate processes</li>
+              <li>Unblock teams to hit revenue goals</li>
+            </ul>
+            <a href="#" class="btn-pill">Get started</a>
+          </div>
+          <div class="panel-img">
+            <img src="https://assets.asana.biz/transform/e1f45e45-2aa9-4f83-ae4b-1de50d4aa324/R3_WEB-AI26-builder-how-it-works-transparent-en_us?io=transform:fill,width:900&format=webp"
+                 alt="Operations dashboard" />
+          </div>
+        </div>
+
+        <div class="tab-panel" id="panel-it">
+          <div class="panel-copy">
+            <h3>Prioritize and streamline IT requests</h3>
+            <ul>
+              <li>Allocate resources more effectively</li>
+              <li>Automate and scale your workflows</li>
+              <li>Onboard and offboard employees</li>
+            </ul>
+            <a href="#" class="btn-pill">Get started</a>
+          </div>
+          <div class="panel-img">
+            <img src="https://assets.asana.biz/transform/e1f45e45-2aa9-4f83-ae4b-1de50d4aa324/R3_WEB-AI26-builder-how-it-works-transparent-en_us?io=transform:fill,width:900&format=webp"
+                 alt="IT dashboard" />
+          </div>
+        </div>
+
+        <div class="tab-panel" id="panel-leadership">
+          <div class="panel-copy">
+            <h3>Drive team alignment and impact</h3>
+            <ul>
+              <li>Connect work to company goals</li>
+              <li>Automate workflows across departments</li>
+              <li>Report on progress and address bottlenecks</li>
+            </ul>
+            <a href="#" class="btn-pill">Get started</a>
+          </div>
+          <div class="panel-img">
+            <img src="https://assets.asana.biz/transform/e1f45e45-2aa9-4f83-ae4b-1de50d4aa324/R3_WEB-AI26-builder-how-it-works-transparent-en_us?io=transform:fill,width:900&format=webp"
+                 alt="Leadership dashboard" />
+          </div>
+        </div>
+
+      </div>
+      </div>
+      
+    </div>
+  </section>
+
+
+  <!-- Use Cases Carousel -->
+  <section class="use-cases">
+    <div class="container">
+      <h2>See how Asana keeps <br />work moving across use <br />cases</h2>
+    </div>
+
+    <div class="carousel-outer">
+      <button class="carousel-arrow left" id="ucPrev" aria-label="Previous">&#8249;</button>
+
+      <div class="carousel-viewport" id="ucViewport">
+        <div class="carousel-track" id="ucTrack">
+
+          <article class="uc-card">
+            <img src="https://assets.asana.biz/transform/1fdda26a-ab23-4138-bd1a-956fca2c91cc/Illustration-ReportingTiles?io=transform:fill,width:600&format=webp" alt="Campaign management" />
+            <h4>Campaign management</h4>
+            <p>Plan, track, and complete your campaigns all in one place.</p>
+            <a href="#">See campaign management &rarr;</a>
+          </article>
+
+          <article class="uc-card">
+            <img src="https://assets.asana.biz/transform/5da0ba11-381c-4ce8-a264-0124cedbb07b/Illustration-EmptyCanvas?io=transform:fill,width:600&format=webp" alt="Creative production" />
+            <h4>Creative production</h4>
+            <p>Accelerate creative work by automating workflows from start to finish.</p>
+            <a href="#">See creative production &rarr;</a>
+          </article>
+
+          <article class="uc-card">
+            <img src="https://assets.asana.biz/transform/9f8d6271-7b63-461c-bdaa-f51650301c8f/Illustration-ProjectManagement?io=transform:fill,width:600&format=webp" alt="Project intake" />
+            <h4>Project intake</h4>
+            <p>Capture, prioritize, and assign requests automatically so your teams have more time to work.</p>
+            <a href="#">See project intake &rarr;</a>
+          </article>
+
+          <article class="uc-card">
+            <img src="https://assets.asana.biz/transform/e8d4bf6c-013f-4913-806d-c400279f18c0/Illustration-GetStartedRocket?io=transform:fill,width:600&format=webp" alt="Product launches" />
+            <h4>Product launches</h4>
+            <p>Coordinate teams, tasks, and timelines to keep every launch on schedule.</p>
+            <a href="#">See product launches &rarr;</a>
+          </article>
+
+          <article class="uc-card">
+            <img src="https://assets.asana.biz/transform/ca22aeb3-c084-45e6-8fb8-3fb0fe716e31/Illustration-Reporting?io=transform:fill,width:600&format=webp" alt="Organizational planning" />
+            <h4>Organizational planning</h4>
+            <p>Address business needs by analyzing progress, bandwidth, and blockers on one platform.</p>
+            <a href="#">See organizational planning &rarr;</a>
+          </article>
+
+          <article class="uc-card">
+            <img src="https://assets.asana.biz/transform/b0b3ce36-6d40-4767-81fa-fcac3406b263/Illustration-UserAvatars?io=transform:fill,width:600&format=webp" alt="Resource planning" />
+            <h4>Resource planning</h4>
+            <p>Visualize how teams are staffed and what resources are available across your business.</p>
+            <a href="#">See resource planning &rarr;</a>
+          </article>
+
+          <article class="uc-card">
+            <img src="https://assets.asana.biz/transform/bc22f3a7-b7d8-45de-9f38-8020a28ddcfb/Illustration-GoalTarget?io=transform:fill,width:600&format=webp" alt="Goal management" />
+            <h4>Goal management</h4>
+            <p>Connect everyone's work to the organizational goals they support.</p>
+            <a href="#">See goal management &rarr;</a>
+          </article>
+
+          <article class="uc-card">
+            <img src="https://assets.asana.biz/transform/b5e5b9c5-4bf6-4c81-adc8-737a46805653/Illustration-ConnectivityPaperCutout?io=transform:fill,width:600&format=webp" alt="Employee onboarding" />
+            <h4>Employee onboarding</h4>
+            <p>Standardize onboarding to help new employees make an impact quickly.</p>
+            <a href="#">See employee onboarding &rarr;</a>
+          </article>
+
+        </div>
+      </div>
+
+      <button class="carousel-arrow right" id="ucNext" aria-label="Next">&#8250;</button>
+    </div>
+  </section>
+
+
+  <!-- Apart -->
+  <section class="apart">
+    <div class="container">
+      <h2>What sets Asana apart</h2>
+
+      <div class="apart-tabs">
+        <button class="apart-tab active" data-apart="clarity">More clarity and accountability</button>
+        <button class="apart-tab" data-apart="ai">Amplify your impact with AI</button>
+        <button class="apart-tab" data-apart="gov">Stay secure with Asana Gov</button>
+      </div>
+
+      <div class="apart-panels">
+
+        <div class="apart-panel active" id="apart-clarity">
+          <div class="apart-copy">
+            <h3>More clarity and accountability</h3>
+            <p>Connect strategic goals to the teams that help achieve them. Keep your company on track with AI working alongside your teams.</p>
+            <a href="#" class="link-cta">Learn about goals &rarr;</a>
+          </div>
+          <div class="apart-img">
+            <img src="https://assets.asana.biz/transform/84bd82a5-8756-4b9b-a760-e790c5cbbc5b/WEB-homepage-goals-en_us?io=transform:fill,width:818&format=webp" alt="Goals feature" />
+          </div>
+        </div>
+
+        <div class="apart-panel" id="apart-ai">
+          <div class="apart-copy">
+            <h3>Amplify your impact with AI</h3>
+            <p>Let Asana AI handle work for you — with the full context of your business — so your teams can achieve their goals faster.</p>
+            <a href="#" class="link-cta">Meet Asana AI &rarr;</a>
+          </div>
+          <div class="apart-img">
+            <img src="https://assets.asana.biz/transform/c5502646-af01-4bbc-ba7e-33d75233d4e0/WEB-homepage-AI-en_us?io=transform:fill,width:818&format=webp" alt="AI feature" />
+          </div>
+        </div>
+
+        <div class="apart-panel" id="apart-gov">
+          <div class="apart-copy">
+            <h3>Stay secure and compliant with Asana Gov</h3>
+            <p>Asana Gov empowers government agencies to coordinate critical work on a platform that meets compliance needs and scales seamlessly.</p>
+            <a href="#" class="link-cta">Check out Asana Gov &rarr;</a>
+          </div>
+          <div class="apart-img">
+            <img src="https://assets.asana.biz/transform/9d71c62a-0d94-48e1-a980-68a38f671b00/web-uses-governmentindustry-asanagovdesktop-en-US?io=transform:fill,width:1120&format=webp" alt="Asana Gov" />
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Integrations -->
+  <section class="integrations">
+    <div class="container center">
+      <h2>Connect over 300+ integrations</h2>
+      <p>Asana connects with the tools your team already uses, right out of the box.</p>
+      <a href="#" class="link-cta">See all integrations &rarr;</a>
+    </div>
+
+    <div class="marquee-wrap">
+      <div class="marquee-track">
+        <div class="int-chip"><img src="https://assets.asana.biz/m/717f7eae038a9050/original/Microsoft-Teams.svg" alt="" />Microsoft Teams</div>
+        <div class="int-chip"><img src="https://assets.asana.biz/m/150594e58876e038/original/Google-Drive.svg" alt="" />Google Drive</div>
+        <div class="int-chip"><img src="https://assets.asana.biz/m/324ec5d49800849d/original/Salesforce.svg" alt="" />Salesforce</div>
+        <div class="int-chip"><img src="https://assets.asana.biz/m/4e953904d53c54e/original/Microsoft-Outlook.svg" alt="" />Outlook</div>
+        <div class="int-chip"><img src="https://assets.asana.biz/m/46e228ae7dab2f0f/original/Slack.svg" alt="" />Slack</div>
+        <div class="int-chip"><img src="https://assets.asana.biz/m/571bde6a0b10b80b/original/Zendesk.svg" alt="" />Zendesk</div>
+        <div class="int-chip"><img src="https://assets.asana.biz/m/49baba0ab294b013/original/Tableau.svg" alt="" />Tableau</div>
+        <div class="int-chip"><img src="https://assets.asana.biz/m/3af9c9731a7fe964/original/Figma.svg" alt="" />Figma</div>
+        <div class="int-chip"><img src="https://assets.asana.biz/m/1d7a9d3a9aa4ebd1/original/Nightfall.svg" alt="" />Nightfall</div>
+        <div class="int-chip"><img src="https://assets.asana.biz/m/328185a11df7a023/original/Okta.svg" alt="" />Okta</div>
+        <div class="int-chip"><img src="https://assets.asana.biz/m/717f7eae038a9050/original/Microsoft-Teams.svg" alt="" />Microsoft Teams</div>
+        <div class="int-chip"><img src="https://assets.asana.biz/m/150594e58876e038/original/Google-Drive.svg" alt="" />Google Drive</div>
+        <div class="int-chip"><img src="https://assets.asana.biz/m/324ec5d49800849d/original/Salesforce.svg" alt="" />Salesforce</div>
+        <div class="int-chip"><img src="https://assets.asana.biz/m/4e953904d53c54e/original/Microsoft-Outlook.svg" alt="" />Outlook</div>
+        <div class="int-chip"><img src="https://assets.asana.biz/m/46e228ae7dab2f0f/original/Slack.svg" alt="" />Slack</div>
+        <div class="int-chip"><img src="https://assets.asana.biz/m/571bde6a0b10b80b/original/Zendesk.svg" alt="" />Zendesk</div>
+        <div class="int-chip"><img src="https://assets.asana.biz/m/49baba0ab294b013/original/Tableau.svg" alt="" />Tableau</div>
+        <div class="int-chip"><img src="https://assets.asana.biz/m/3af9c9731a7fe964/original/Figma.svg" alt="" />Figma</div>
+        <div class="int-chip"><img src="https://assets.asana.biz/m/1d7a9d3a9aa4ebd1/original/Nightfall.svg" alt="" />Nightfall</div>
+        <div class="int-chip"><img src="https://assets.asana.biz/m/328185a11df7a023/original/Okta.svg" alt="" />Okta</div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <div class="container center">
+      <h2>The world's top companies trust Asana</h2>
+      <a href="#" class="link-cta">See all case studies &rarr;</a>
+    </div>
+
+    <div class="test-carousel">
+      <div class="test-track" id="testTrack">
+
+        <div class="test-card">
+          <img src="https://assets.asana.biz/m/37f23cc2d55080f/original/Danone_40px_quote.svg" alt="Danone" class="test-logo" />
+          <div class="test-tags">
+            <span>Enterprise</span>
+            <span>Food &amp; hospitality</span>
+          </div>
+          <blockquote>"Asana makes everything shareable, which saves us time executing programs because it's so much easier to replicate and learn from what others have done."</blockquote>
+          <cite>Simon Levinson<br /><small>Global Digital Manufacturing Process Innovation Manager, Danone</small></cite>
+          <a href="#" class="link-cta">Read case study &rarr;</a>
+        </div>
+
+        <div class="test-card">
+          <p class="test-name-logo">Vodafone</p>
+          <div class="test-tags">
+            <span>Enterprise</span>
+            <span>Telecommunications</span>
+          </div>
+          <blockquote>"With Asana, we have visibility into our entire pipeline and can more easily prioritize work that has the biggest impact on our business."</blockquote>
+          <cite>Kate Jones<br /><small>Head of Global Marketing Operations, Vodafone</small></cite>
+          <a href="#" class="link-cta">Read case study &rarr;</a>
+        </div>
+
+        <div class="test-card">
+          <p class="test-name-logo">Spotify</p>
+          <div class="test-tags">
+            <span>Enterprise</span>
+            <span>Media &amp; entertainment</span>
+          </div>
+          <blockquote>"Asana has been transformational. It lets our teams focus on creative work rather than hunting down status updates in email chains."</blockquote>
+          <cite>Michael Brown<br /><small>Director of Marketing Operations, Spotify</small></cite>
+          <a href="#" class="link-cta">Read case study &rarr;</a>
+        </div>
+
+        <div class="test-card">
+          <p class="test-name-logo">NASA JPL</p>
+          <div class="test-tags">
+            <span>Government</span>
+            <span>Science &amp; technology</span>
+          </div>
+          <blockquote>"Managing complex, multi-team projects is so much cleaner now. We've cut coordination overhead significantly across our mission teams."</blockquote>
+          <cite>Lisa Garcia<br /><small>Senior Project Manager, NASA JPL</small></cite>
+          <a href="#" class="link-cta">Read case study &rarr;</a>
+        </div>
+
+      </div>
+
+      <div class="test-controls">
+        <button class="carousel-arrow sm" id="testPrev" aria-label="Previous">&#8249;</button>
+        <div class="dots" id="testDots"></div>
+        <button class="carousel-arrow sm" id="testNext" aria-label="Next">&#8250;</button>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Cta Band -->
+  <section class="cta-band">
+    <h2>Get started in minutes<br />to move work forward</h2>
+    <div class="cta-btns">
+      <a href="#" class="btn-pill large">Get started</a>
+      <a href="#" class="btn-outline large light">View demo</a>
+    </div>
+  </section>
+
+
+  <!--Footer -->
+  <footer class="footer">
+    <div class="footer-top">
+
+      <div class="footer-brand">
+        <span class="footer-wordmark">asana</span>
+        <p>Work management for teams and organizations.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Twitter">𝕏</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="YouTube">▶</a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <div class="footer-col">
+          <h5>Product</h5>
+          <a href="#">Product overview</a>
+          <a href="#">All features</a>
+          <a href="#">Integrations</a>
+          <a href="#">What's new</a>
+        </div>
+        <div class="footer-col">
+          <h5>Solutions</h5>
+          <a href="#">Enterprise</a>
+          <a href="#">Small business</a>
+          <a href="#">Marketing</a>
+          <a href="#">Operations</a>
+        </div>
+        <div class="footer-col">
+          <h5>Resources</h5>
+          <a href="#">Resource center</a>
+          <a href="#">Customer stories</a>
+          <a href="#">Help center</a>
+          <a href="#">Community</a>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <a href="#">About us</a>
+          <a href="#">Careers</a>
+          <a href="#">Press</a>
+          <a href="#">Pricing</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2024 Asana, Inc.</p>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Cookie preferences</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
 
